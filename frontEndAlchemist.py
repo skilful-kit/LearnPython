@@ -5,7 +5,7 @@ pygame.init()
 
 WIDTH, HEIGHT = 900, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Мини-Алхимия")
+pygame.display.set_caption("Алхимия")
 clock = pygame.time.Clock()
 
 BG_COLOR = (30, 30, 40)
@@ -42,8 +42,7 @@ ELEMENT_COLORS = {
 
 opened_elements = ["Вода", "Огонь", "Земля", "Воздух"]
 
-class Element:
-    """Класс элемента на игровом поле"""
+class Element:
     def __init__(self, name, x, y):
         self.name = name
         self.color = ELEMENT_COLORS.get(name, (200, 200, 200))
