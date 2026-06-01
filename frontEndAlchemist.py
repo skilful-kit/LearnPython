@@ -62,8 +62,7 @@ selected_element = None
 offset_x = 0
 offset_y = 0
 
-def check_combination(el1, el2):
-    """Проверяет, создают ли два элемента новый"""
+def check_combination(el1, el2):
     pair = frozenset([el1.name, el2.name])
     if pair in RECIPES:
         new_name = RECIPES[pair]
